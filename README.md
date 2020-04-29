@@ -17,6 +17,6 @@ Bibtext
     year={2020},
     eprint={2004.11045},
     archivePrefix={arXiv},
-    booktitle = {SIGIR '18}
+    booktitle = {SIGIR '20}
 }
 ```
