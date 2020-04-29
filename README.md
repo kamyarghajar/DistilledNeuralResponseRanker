@@ -11,7 +11,7 @@ Amir Vakili Tahami, Kamyar Ghajar, Azadeh Shakery. Distilling Knowledge for Fast
 43th International ACM SIGIR Conference on Research & Development in Information Retrieval (SIGIR 2020).
 
 Bibtext
- @inproceedings{{tahami2020distilling,
+ @inproceedings{tahami2020distilling,
     title={Distilling Knowledge for Fast Retrieval-based Chat-bots},
     author={Amir Vakili Tahami and Kamyar Ghajar and Azadeh Shakery},
     year={2020},
