@@ -1,10 +1,25 @@
 # Distilled Neural Response Ranker 
 
-code will be here soon...
-
 Implementation of "Distilling Knowledge for Fast Retrieval-based Chat-bots" (SIGIR 2020) using deep matching transformer networks and knowledge distillation for response retrieval in information-seeking conversational systems.
 
-If you use this code for your paper, please cite it as:
+Prepocessing a dataset:
+```bash
+cd ./Datasets/ubuntu_data/
+ipython ./ubuntu_preprocess.py
+```
+
+Training a Bi-Encoder:
+```bash
+ipython ./main_bert_bi.py -- --dataset ubuntu_data --nmodel BiEncoderDot2 --epochs 1 --ntrain 100000
+```
+
+Training an enchanced Cross-Encoder (BECA):
+```bash
+ipython ./main_bert_bi.py -- --dataset ubuntu_data --nmodel MolyEncoderAggP2 --epochs 1 --ntrain 100000
+```
+
+
+You can cite the paper as:
 
 ```
 Amir Vakili Tahami, Kamyar Ghajar, Azadeh Shakery. Distilling Knowledge for Fast Retrieval-based Chat-bots. In Proceedings of the
@@ -20,3 +35,4 @@ Bibtext
     booktitle = {SIGIR '20}
 }
 ```
+
